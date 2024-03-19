@@ -1,0 +1,139 @@
+/* Estilos globais */
+* {
+    margin: 0; /* Define margem como 0 */
+    padding: 0; /* Define preenchimento como 0 */
+    box-sizing: border-box; /* Garante que a largura e altura incluam preenchimento e borda */
+    list-style: none; /* Remove marcadores de lista */
+    text-decoration: none; /* Remove decoração de texto */
+    color: black; /* Define a cor do texto como preto */
+}
+
+/* Títulos */
+h1 {
+    padding: 20px; /* Adiciona preenchimento */
+    background-color: rgb(138, 136, 136); /* Define a cor de fundo */
+}
+
+h2 {
+    margin-top: 30px; /* Adiciona margem superior */
+    margin-bottom: 10px; /* Adiciona margem inferior */
+}
+
+/* Container */
+.container {
+    max-width: 80%; /* Define a largura máxima */
+    width: 800px; /* Define a largura */
+    margin: auto; /* Centraliza horizontalmente */
+}
+
+/* Menu */
+.container-menu {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Corrigir o menu, colocar em formato de linha */
+.menu {
+    display: flex;
+    padding: 10px;
+    margin: auto; 
+}
+
+.menu li {
+    padding: 20px;
+    border: 1px solid transparent; /* Adiciona borda */
+}
+
+/* Adiciona borda inferior ao passar o mouse */
+.menu li:hover {
+    border-bottom: 1px solid black; 
+}
+
+/* Formulário */
+fieldset {
+    padding: 20px;
+    border-radius: 5px; /* Adiciona borda arredondada */
+}
+
+/* campo de escrita */
+input {
+    padding: 5px; 
+}
+
+.campo-form {
+    margin: 20px;
+}
+
+/* Centraliza a mensagem do lado do campo textarea */
+#mensagem {
+    align-items: center; /* Centraliza verticalmente */
+    display: flex; /* Usa flexbox */
+}
+
+textarea {
+    margin: 10px; 
+}
+
+/* Centraliza horizontalmente */
+#button {
+    text-align: center;
+}
+
+button {
+    padding: 5px;
+    cursor: pointer; /* Define o cursor como ponteiro(mão) */
+}
+
+/* Rodapé */
+footer {
+    margin-top: 30px; 
+    background-color: rgb(138, 136, 136);
+    text-align: center;
+}
+
+.footer-contato {
+    padding: 20px;
+}
+
+/* Campo embaixo do footer que esta quem criou a página */
+.criador {
+    background-color: rgb(247, 244, 244); 
+    padding: 10px; 
+    color: black; 
+    height: 80px;
+}
+
+/* Media queries usado para corrigir a responsividade da página */
+@media (max-width: 635px) {
+    .container {
+        width: 95%; /* Reduz a largura do container */
+    }
+
+    fieldset {
+       padding: 10px; /* Reduz o preenchimento */
+    }
+
+    .campo-form {
+        margin: 10px; /* Reduz a margem */
+    }
+
+    input,
+    textarea {
+        margin: 5px; /* Reduz a margem */
+        border: 1px solid rgb(172, 172, 172); /* Adiciona borda */
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+        width: 100%; /* Define a largura do container como 100% */
+    }
+
+    .menu li {
+        padding: 10px; /* Reduz o preenchimento dos itens do menu */
+    }
+
+    .footer-contato {
+        padding: 10px; /* Reduz o preenchimento do rodapé */
+    }
+}

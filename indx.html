@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portifólio pessoal</title>
+</head>
+
+<body>
+    <!-- Título -->
+    <h1>Portifólio pessoal</h1>
+
+    <!-- Container para definir o tamanho do currículo com relação a tela -->
+    <div class="container">
+        <header>
+            <!-- Menu, onde utilizei link e lista -->
+            <nav class="container-menu">
+                <ul class="menu">
+                    <a href="#sobremim">
+                        <li>Sobre mim</li>
+                    </a>
+                    <a href="#formacao">
+                        <li>Formção e idiomas</li>
+                    </a>
+                    <a href="#portifolio">
+                        <li>Portifólio</li>
+                    </a>
+                    <a href="#contato">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <!-- Título e paragrafo falando sobre mim -->
+            <h2 id="sobremin">Sobre mim</h2>
+            <p> Meu nome é Ângelo Luiz Bonetti e tenho 22 anos. Atualmente, trabalho como suporte ao cliente na empresa
+                Silbeck. É gratificante poder ajudar os clientes a resolverem seus problemas e garantir que tenham a
+                melhor experiência possível com nossos produtos e serviços.
+                <br>
+                Nos meus momentos de folga, gosto de relaxar assistindo séries de TV. É uma ótima forma de desligar a
+                mente e mergulhar em mundos diferentes. Além disso, passar tempo com minha família e minha namorada é
+                uma prioridade para mim. Aprecio cada momento que compartilhamos juntos, criando laços e memórias que
+                valorizo profundamente.
+                Também adoro reunir os amigos para um churrasco animado e uma partida de truco. São momentos de
+                descontração e diversão que sempre me trazem alegria. No entanto, não posso negar minha paixão por
+                estudar programação. É algo que me fascina e que vejo como o meu futuro profissional. A cada linha de
+                código que escrevo, sinto que estou mais próximo de realizar meu sonho de me tornar um programador.
+                <br>
+                Em resumo, sou uma pessoa determinada, apaixonada por diversas atividades e com um grande desejo de
+                crescimento pessoal e profissional. Cada dia é uma oportunidade para aprender, crescer e aproveitar ao
+                máximo tudo o que a vida tem a oferecer.
+            </p>
+        </section>
+        <section>
+            <h2 id="formacao">Formação e idiomas</h2>
+            <p><b>Formação:</b> Analise e desenvolvimento de sistemas - Uninter
+                <br>(cursando - dezembro de 2025)
+            </p>
+            <p><b>Idioma:</b> Inglês nível básico</p>
+        </section>
+        <section>
+            <h2 id="portifolio">Portifólio</h2>
+            <!-- Utilizei link e coloquei os links que tenho criados no git -->
+            <ul>
+                <a href="https://angelobonetti.github.io/projetoChurrascometro/" target="_blank">
+                    <li>Churrascômetro</li>
+                </a>
+                <a href="https://angelobonetti.github.io/NLW---eSports/" target="_blank">
+                    <li>NLW-eSports RocketSeat</li>
+                </a>
+            </ul>
+
+        </section>
+        <section>
+            <h2 id="contato">Contato</h2>
+            <!-- Formulário para preencher os dados de contato e caixa de mensagem -->
+            <form action="">
+                <fieldset>
+                    <legend>Deixe uma mensagem</legend>
+                    <div class="campo-form">
+                        <label for="nome">Nome: </label>
+                        <input type="text" placeholder="Digite o seu nome">
+                    </div>
+                    <div class="campo-form">
+                        <label for="email">Email: </label>
+                        <input type="email" placeholder="Digite o seu e-mail">
+                    </div>
+                    <div class="campo-form" id="mensagem">
+                        <label for="mensagem">Digite sua mensagem: </label>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder=""></textarea>
+                    </div>
+                    <div id="button">
+                        <button>Eviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <!-- Rodapé com meu contato e algumas informações -->
+        <div class="footer-contato">
+            <ul>
+                <a href="mailto:angeloaiure@hotmail.com">
+                    <li>angeloaiure@hotmail.com</li>
+                </a>
+                <a href="tel:48998203468">
+                    <li>(48)99820-3468</li>
+                </a>
+            </ul>
+        </div>
+        <div class="criador">
+            <p>Criado por Ângelo Luiz Bonetti.</p>
+            <p>Disciplina fundamentos da programação web, professora Margarete.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
